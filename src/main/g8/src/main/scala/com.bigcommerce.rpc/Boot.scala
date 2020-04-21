@@ -1,5 +1,5 @@
 package com.bigcommerce.rpc
 
-class $bootclass {
+class Boot {
 
 }
