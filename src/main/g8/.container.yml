@@ -12,7 +12,7 @@ processes:
     external_domain_prefix: $module$
     signal_forwarding: true
     grpc_services:
-      - bigcommerce.rpc.$module$;format="Camel"$
+      - bigcommerce.rpc.$module;format="Camel"$
     health_check:
       grpc:
         interval: 10s
