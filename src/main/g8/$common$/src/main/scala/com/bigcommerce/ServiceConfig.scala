@@ -2,7 +2,7 @@ package com.bigcommerce
 
 import com.typesafe.config.{Config, ConfigFactory}
 
-case class CategoryLimitWarn(value: Int)
+case class $module;format="Camel"$LimitWarn(value: Int)
 
 case class ServiceConfig(prometheusConfig: PrometheusConfig,
                          categoryLimitWarn: CategoryLimitWarn,
@@ -15,7 +15,7 @@ object ServiceConfig {
   def apply(config: Config): ServiceConfig = {
     this.apply(
       PrometheusConfig(config.getConfig("prometheus")),
-      CategoryLimitWarn(config.getInt("catalog.category-limit-warn")),
+      CategoryLimitWarn(config.getInt("$module$.$module$-limit-warn")),
       config.getString("interface"),
       config.getInt("port")
     )
