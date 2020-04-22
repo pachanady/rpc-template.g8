@@ -4,7 +4,7 @@ team: storefront
 slack_channel: storefront-dev
 processes:
   rpc:
-    cmd: java $JAVA_OPTS_RPC -Dlogback.configurationFile=logback-nomad.xml -jar "target/scala-2.13/$module$.jar" > $LOG_DIR/$module$.log
+    cmd: java \$JAVA_OPTS_RPC -Dlogback.configurationFile=logback-nomad.xml -jar "target/scala-2.13/$module$.jar" > $LOG_DIR/$module$.log
     port: 9701
     ssl: false
     public: false
