@@ -1,0 +1,24 @@
+name: $module$
+base_image: language/java_8
+team: storefront
+slack_channel: storefront-dev
+processes:
+  rpc:
+    cmd: java $JAVA_OPTS_RPC -Dlogback.configurationFile=logback-nomad.xml -jar "target/scala-2.13/$module$.jar" > $LOG_DIR/$module$.log
+    port: 9701
+    ssl: false
+    public: false
+    internal_domain_prefix: $module$
+    external_domain_prefix: $module$
+    signal_forwarding: true
+    grpc_services:
+      - bigcommerce.rpc.$module$;format="Camel"$
+    health_check:
+      grpc:
+        interval: 10s
+    metrics:
+      path: /prometheus_metrics
+      port: 9700
+    alert_via:
+      - slack
+      - pagerduty

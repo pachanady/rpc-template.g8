@@ -27,7 +27,7 @@ lazy val common = Project(id = "common", base = file("common"))
   .disablePlugins(RevolverPlugin)
 
 // Catalog subproject
-lazy val catalog = Project(id = $name$, base = file($module$))
+lazy val catalog = Project(id = "$name$", base = file("$module$"))
   .settings(CommonSettings.settings)
   .settings(scalacOptions ++= CommonSettings.scalacOpts)
   .settings(AssemblySettings.MergingStrategy)
@@ -40,7 +40,7 @@ lazy val catalog = Project(id = $name$, base = file($module$))
   )
   .dependsOn(common)
 
-lazy val root = Project(id = $name$, base = file("."))
+lazy val root = Project(id = "$name$", base = file("."))
   .settings(CommonSettings.settings)
   .settings(scalacOptions ++= CommonSettings.scalacOpts)
   .settings(Revolver.settings)
@@ -54,5 +54,14 @@ lazy val root = Project(id = $name$, base = file("."))
     testOptions in Test += Tests.Argument("-oDU") // adds duration of each test
   )
   .settings(AssemblySettings.Root.values)
-  .dependsOn(catalog)
+  .dependsOn($module$)
 
+lazy val testAll = TaskKey[Unit]("testAll", "Execute all tests")
+testAll in Runtime := Def
+  .sequential(
+    test in (root, Test),
+    test in (catalog, Test),
+    test in (common, Test),
+    test in (catalog, FunTestSettings.FunTestConfig)
+  )
+  .value

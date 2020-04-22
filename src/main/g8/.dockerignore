@@ -1,0 +1,4 @@
+.git
+src
+target
+!target/scala-2.13/*.jar
