@@ -3,7 +3,7 @@
 <configuration>
     <!-- Configure logstash JSON logging -->
     <appender name="JSONFILE" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_DIR}/${NOMAD_JOB_NAME}-${NOMAD_TASK_NAME}_json.log</file>
+        <file>\${LOG_DIR}/\${NOMAD_JOB_NAME}-\${NOMAD_TASK_NAME}_json.log</file>
         <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
@@ -36,11 +36,11 @@
     </contextListener>
 
     <!-- Make grpc requests at debug level for now -->
-    <logger name="io.grpc" level="${LOGBACK_ROOT_LEVEL}"/>
-    <logger name="grpc.request" level="${LOGBACK_ROOT_LEVEL}" />
-    <logger name="com.bigcommerce.core.rpc.server.auth" level="${LOGBACK_ROOT_LEVEL}" />
+    <logger name="io.grpc" level="\${LOGBACK_ROOT_LEVEL}"/>
+    <logger name="grpc.request" level="\${LOGBACK_ROOT_LEVEL}" />
+    <logger name="com.bigcommerce.core.rpc.server.auth" level="\${LOGBACK_ROOT_LEVEL}" />
 
-    <root level="${LOGBACK_ROOT_LEVEL}">
+    <root level="\${LOGBACK_ROOT_LEVEL}">
         <appender-ref ref="ASYNC" />
         <appender-ref ref="ASYNC-SENTRY" />
     </root>
