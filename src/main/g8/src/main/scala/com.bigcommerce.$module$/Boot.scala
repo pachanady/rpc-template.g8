@@ -145,7 +145,7 @@ class $bootclass$   extends App
     case Success(b) =>
       log.info(s"$module;format="Camel"$ service listening on \${b.localAddress}")
     case Failure(err) =>
-      log.error(s"Error binding to socket\ ${serviceConfig.interface}:\${serviceConfig.port}, exiting...", err)
+      log.error(s"Error binding to socket\${serviceConfig.interface}:\${serviceConfig.port}, exiting...", err)
       sys.exit(-1)
   }
 
