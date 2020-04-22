@@ -35,7 +35,7 @@ credentials += Credentials(Path.userHome / ".bintray" / ".credentials")
 #### Installation
 Make sure JDK 1.8 installed.
 ```
-$ java -version
+\$ java -version
 ```
 
 #### Running application
