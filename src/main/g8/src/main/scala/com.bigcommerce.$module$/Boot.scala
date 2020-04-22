@@ -143,7 +143,7 @@ class $bootclass$   extends App
 
   bindingFuture.onComplete {
     case Success(b) =>
-      log.info(s"\$module;format="Camel"\$ service listening on \${b.localAddress}")
+      log.info(s"$module;format="Camel"$ service listening on \${b.localAddress}")
     case Failure(err) =>
       log.error(s"Error binding to socket ${serviceConfig.interface}:${serviceConfig.port}, exiting...", err)
       sys.exit(-1)
@@ -159,7 +159,7 @@ class $bootclass$   extends App
 
   metricsBindingFuture.onComplete {
     case Success(b) =>
-      log.info(s"$module;format="Camel"\$ service prometheus endpoint listening on \${b.localAddress}")
+      log.info(s"$module;format="Camel"$ service prometheus endpoint listening on \${b.localAddress}")
     case Failure(err) =>
       log.error(s"Error binding to socket \${serviceConfig.prometheusConfig.interface}:\${serviceConfig.prometheusConfig.port}, prometheus metrics unavailable", err)
   }
