@@ -1,13 +1,5 @@
 import Dependencies._
 
-ThisBuild / organization := "com.bigcommerce.rpc"
-ThisBuild / scalaVersion := "2.12.8"
-
-/*lazy val root = (project in file(".")).
-  settings(
-    name := $name$
-  )*/
-
 lazy val common = Project(id = "common", base = file("common"))
   .settings(CommonSettings.settings)
   .settings(scalacOptions ++= CommonSettings.scalacOpts)
