@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rpc-template.iml" filepath="$PROJECT_DIR$/.idea/modules/rpc-template.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rpc-template-build.iml" filepath="$PROJECT_DIR$/.idea/modules/rpc-template-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/$module$-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/$module$-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
-
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rpc-template.iml" filepath="$PROJECT_DIR$/.idea/modules/rpc-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rpc-template-build.iml" filepath="$PROJECT_DIR$/.idea/modules/rpc-template-build.iml" />
     </modules>
   </component>
 </project>
