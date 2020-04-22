@@ -8,7 +8,7 @@ import com.bigcommerce.ServiceConfig
 
 
 import com.bigcommerce.$module$.routers.PrometheusRouter
-import com.bigcommerce.$module$.{Wiring => $module$Wiring}
+import com.bigcommerce.$module$.{Wiring => $module;format="Camel"$Wiring}
 import com.bigcommerce.channels.ChannelAggregateGrpc.ChannelAggregateStub
 import com.bigcommerce.channels.ChannelsGrpc.ChannelsStub
 import com.bigcommerce.core.concurrent.PropagatingExecutionContext

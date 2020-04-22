@@ -5,7 +5,7 @@ import com.typesafe.config.{Config, ConfigFactory}
 case class $module;format="Camel"$LimitWarn(value: Int)
 
 case class ServiceConfig(prometheusConfig: PrometheusConfig,
-                         categoryLimitWarn: CategoryLimitWarn,
+                         $module$LimitWarn: $module;format="Camel"$LimitWarn,
                          interface: String,
                          port: Int)
 
@@ -15,7 +15,7 @@ object ServiceConfig {
   def apply(config: Config): ServiceConfig = {
     this.apply(
       PrometheusConfig(config.getConfig("prometheus")),
-      CategoryLimitWarn(config.getInt("$module$.$module$-limit-warn")),
+      $module;format="Camel"$LimitWarn(config.getInt("$module$.$module$-limit-warn")),
       config.getString("interface"),
       config.getInt("port")
     )
