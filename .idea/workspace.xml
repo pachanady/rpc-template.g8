@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0630c74-faa8-4a97-baf6-45214df44d56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/ServiceConfig.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/command/UpdateCommand.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/errors/Error.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/PaginatedSearchResult.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/PaginationConversions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/PaginationV2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/Paginator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/PaginatorV2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/paginator/SearchResult.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/utils/ExceptionHandler.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/utils/PartitionUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/validator/CurrencyValidator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/validator/PriceValidator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/validator/StoreIdValidator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/common/validator/Validatable.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/bigcommerce/core/metrics/prometheus/InstrumentedAs.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/main/scala/com/sandinh/phpparser/PhpUnserializer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/test/scala/com/bigcommerce/common/utils/ExceptionHandlerUnitSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/test/scala/com/bigcommerce/common/validator/CurrencyValidatorUnitSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/test/scala/com/bigcommerce/common/validator/PriceValidatorUnitSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/$common$/src/test/scala/com/bigcommerce/common/validator/StoreIdValidatorUnitSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/.container.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/.env-example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/project/Build.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/$module$HttpService" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/routers/PrometheusRouter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$/$module$ServiceImpl.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/g8/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/g8/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/g8/default.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/g8/default.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/g8/project/main/scala/Stub.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/g8/project/main/scala/com.bigcommerce.rpc/Boot.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/Boot.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,6 +39,15 @@
               <folding>
                 <element signature="e#34#110#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$/$module$ServiceImpl.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -118,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/g8/.container.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -137,15 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/$module$HttpService">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -179,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/main/g8/.env" />
         <option value="$PROJECT_DIR$/src/main/g8/.env-example" />
         <option value="$PROJECT_DIR$/src/main/g8/.container.yml" />
+        <option value="$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$/$module$ServiceImpl.scala" />
       </list>
     </option>
   </component>
@@ -222,6 +190,107 @@
             </path>
             <path>
               <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bigcommerce.$module$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bigcommerce.$module$" type="462c0819:PsiDirectoryNode" />
+              <item name="$module$ServiceImpl.scala" type="6117b065:FileNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rpc-template" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bigcommerce.$module$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rpc-template" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -235,18 +304,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/g8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/g8/$module$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$" />
+      <recent name="$PROJECT_DIR$/src/main/g8/$module$" />
       <recent name="$PROJECT_DIR$/src/main/g8" />
       <recent name="$PROJECT_DIR$/src/main/g8/$common$" />
       <recent name="$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$" />
-      <recent name="$PROJECT_DIR$/project" />
-      <recent name="$PROJECT_DIR$/src/main/g8/project" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -353,7 +422,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587504447555</updated>
-      <workItem from="1587504449237" duration="11317000" />
+      <workItem from="1587504449237" duration="11581000" />
     </task>
     <task id="LOCAL-00001" summary="Boot.scala">
       <created>1587508020663</created>
@@ -376,11 +445,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587514992076</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added addtional buold artifacts">
+      <created>1587519692651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587519692651</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11317000" />
+    <option name="totallyTimeSpent" value="11581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="384" y="23" width="1806" height="922" extended-state="0" />
@@ -391,7 +467,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17743765" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33673468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.3286517" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
@@ -427,7 +503,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Boot.scala" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boot.scala" />
+    <MESSAGE value="Added addtional buold artifacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added addtional buold artifacts" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.travis.yml">
@@ -620,16 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/Boot.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#34#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/g8/default.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -672,10 +739,30 @@
     <entry file="file://$PROJECT_DIR$/src/main/g8/.dockerignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$/routers/PrometheusRouter.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/g8/.container.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/src/main/scala/com.bigcommerce.$module$/Boot.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#34#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/$module$/src/main/scala/com.bigcommerce.$module$/$module$ServiceImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>

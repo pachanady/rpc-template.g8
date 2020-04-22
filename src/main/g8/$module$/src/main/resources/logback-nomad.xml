@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <!-- Configure logstash JSON logging -->
+    <appender name="JSONFILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/${NOMAD_JOB_NAME}-${NOMAD_TASK_NAME}_json.log</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="JSONFILE" />
+    </appender>
+
+    <!-- Configure the Sentry appender, overriding the logging threshold to the WARN level -->
+    <appender name="Sentry" class="io.sentry.logback.SentryAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator>
+                <expression>return message.contains("Communications link failure");</expression>
+                <!-- this often happens due to db failover event, which is BAU, but has an error level, thus needs to be removed via this filter  -->
+            </evaluator>
+            <OnMismatch>NEUTRAL</OnMismatch>
+            <OnMatch>DENY</OnMatch>
+        </filter>
+    </appender>
+
+    <appender name="ASYNC-SENTRY" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="Sentry" />
+    </appender>
+
+    <!-- Setup JUL level change propagator -->
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- Make grpc requests at debug level for now -->
+    <logger name="io.grpc" level="${LOGBACK_ROOT_LEVEL}"/>
+    <logger name="grpc.request" level="${LOGBACK_ROOT_LEVEL}" />
+    <logger name="com.bigcommerce.core.rpc.server.auth" level="${LOGBACK_ROOT_LEVEL}" />
+
+    <root level="${LOGBACK_ROOT_LEVEL}">
+        <appender-ref ref="ASYNC" />
+        <appender-ref ref="ASYNC-SENTRY" />
+    </root>
+</configuration>
+
