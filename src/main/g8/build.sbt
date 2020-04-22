@@ -18,8 +18,8 @@ lazy val common = Project(id = "common", base = file("common"))
   .settings(logBuffered in Test := false)
   .disablePlugins(RevolverPlugin)
 
-// Catalog subproject
-lazy val catalog = Project(id = "$module$-impl", base = file("$module$"))
+// Main subproject
+lazy val $module$ = Project(id = "$module$-impl", base = file("$module$"))
   .settings(CommonSettings.settings)
   .settings(scalacOptions ++= CommonSettings.scalacOpts)
   .settings(AssemblySettings.MergingStrategy)
@@ -52,8 +52,8 @@ lazy val testAll = TaskKey[Unit]("testAll", "Execute all tests")
 testAll in Runtime := Def
   .sequential(
     test in (root, Test),
-    test in (catalog, Test),
+    test in ($module$, Test),
     test in (common, Test),
-    test in (catalog, FunTestSettings.FunTestConfig)
+    test in ($module$, FunTestSettings.FunTestConfig)
   )
   .value

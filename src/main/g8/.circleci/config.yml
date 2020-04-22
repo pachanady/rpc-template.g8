@@ -1,0 +1,21 @@
+version: 2.1
+
+orbs:
+  ci: bigcommerce/internal@volatile
+  scala: bigcommerce/internal-scala@volatile
+
+workflows:
+  version: 2
+  full:
+    jobs:
+      - scala/sbt-test:
+          context: Bintray Access
+          e: scala/openjdk-mysql
+          command: "++2.13.1 testAll"
+      - scala/build-scala-container:
+          context: Bintray Access
+      - ci/notify-success:
+          context: Bintray Access
+          requires:
+            - scala/sbt-test
+            - scala/build-scala-container
