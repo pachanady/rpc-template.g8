@@ -27,7 +27,7 @@ lazy val common = Project(id = "common", base = file("common"))
   .disablePlugins(RevolverPlugin)
 
 // Catalog subproject
-lazy val catalog = Project(id = "$name$", base = file("$module$"))
+lazy val catalog = Project(id = "$module$-impl", base = file("$module$"))
   .settings(CommonSettings.settings)
   .settings(scalacOptions ++= CommonSettings.scalacOpts)
   .settings(AssemblySettings.MergingStrategy)
