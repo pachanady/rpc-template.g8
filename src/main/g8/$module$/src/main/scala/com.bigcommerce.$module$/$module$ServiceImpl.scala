@@ -30,8 +30,7 @@ import com.google.inject.Guice
 import io.grpc.{ServerInterceptors, ServerServiceDefinition}
 import io.prometheus.client.CollectorRegistry
 
-class $$module;format="Camel"$
-class $$module;format="Camel"$
+class $module;format="Camel"$
   extends RpcServer {
 
 
