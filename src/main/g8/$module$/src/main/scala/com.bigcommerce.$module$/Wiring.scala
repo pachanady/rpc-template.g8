@@ -7,9 +7,6 @@ import com.google.inject.AbstractModule
 import io.opentracing.Tracer
 import net.codingwell.scalaguice.ScalaModule
 import scala.concurrent.ExecutionContext
-import com.bigcommerce.catalog.catalog.overrides.repository.CatalogOverrideRepository
-import com.bigcommerce.catalog.catalog.overrides.repository.db.DbCatalogOverrideRepository
-import com.bigcommerce.catalog.catalog.overrides.service.{CatalogOverrideService, CatalogOverrideServiceImpl}
 import com.bigcommerce.channels.ChannelAggregateGrpc.ChannelAggregate
 import com.bigcommerce.channels.ChannelsGrpc.Channels
 
