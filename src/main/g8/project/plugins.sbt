@@ -1,5 +1,3 @@
-addSbtPlugin("org.foundweekends.giter8" %% "sbt-giter8" % "0.12.0")
-libraryDependencies += { "org.scala-sbt" %% "scripted-plugin" % sbtVersion.value }
 resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/"
 resolvers += "sean8223 Releases" at "https://github.com/sean8223/repository/raw/master/releases"
 
