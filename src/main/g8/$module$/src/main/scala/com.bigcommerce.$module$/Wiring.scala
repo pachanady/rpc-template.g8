@@ -1,6 +1,6 @@
 package com.bigcommerce.catalog
 
-import com.bigcommerce.$module;format="Camel"LimitWarn
+import com.bigcommerce.$module;format="Camel"$LimitWarn
 import com.bigcommerce.core.storedb.{StoreDb, StoreDbPoolProvider}
 import com.bigcommerce.search.SearchGrpc.Search
 import com.google.inject.AbstractModule
